@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 7;
+        let guess = prompt('Kan du gissa på det hemliga numret?');
+        while (number !== guess) {
+            guess = prompt('Kan du gissa på det hemliga numret?');
+            if (number == guess) {
+                alert('Otroligt, du gissade rätt!');
+                break;
+            } else if(guess > number) {
+                // Du gissade fel
+                alert('Tyvärr, du gissade för högt!');}
+                else if(guess < number) {
+                // Du gissade fel
+                alert('Tyvärr, du gissade för låg!');}
+        }
+    </script>
+</body>
+</html>

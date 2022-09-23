@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bamse = {
+            name: 'Bamse',
+            animal: 'Brunbjörn',
+            description: 'Världens starkaste björn',
+            quote: 'Det är modigt att våga säga att man är rädd.'
+        };
+        console.log(bamse.quote);
+        let skalman = {
+            name: 'skalman',
+            animal: 'skalbagge',
+            description: 'Världens snabbaste skalbagge',
+            quote: 'gäsp'
+        }; // fyll på
+        let friends = []; // tom array
+        friends.push(bamse, skalman); // lägg till vännerna med push() metoden
+        let person = prompt("vem vill du ha", "");
+        let text;
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+        console.log(friends[person]); // skriv ut första vännen
+        prompt(friends[person]);
+    </script>
+</body>
+</html>
